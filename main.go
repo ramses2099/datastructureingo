@@ -71,4 +71,9 @@ func main() {
 		printPerson(v)
 	}
 
+	pu := pm.GetPerson(1)
+	fmt.Println("search ", pu.Name)
+	pu.Name = "juan perez"
+	fmt.Println("change search ", pu.Name)
+
 }

@@ -19,3 +19,14 @@ func (p *personManager) Length() int {
 func (p *personManager) GetPersons() []*Person {
 	return p.persons
 }
+
+func (p *personManager) GetPerson(id int32) *Person {
+
+	for _, v := range p.persons {
+		if v.Id == id {
+			return v
+		}
+	}
+
+	return nil
+}
